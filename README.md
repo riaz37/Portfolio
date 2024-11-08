@@ -29,7 +29,7 @@ This project is a responsive, single-page application that showcases my skills, 
 
 1. Clone the repository:
 
-`git clone https://github.com/krishnavalliappan/portfolio`
+`git clone https://github.com/riaz37/portfolio`
 
 2. Install dependencies:
 
