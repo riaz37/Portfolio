@@ -29,8 +29,12 @@ This project is a responsive, single-page application that showcases my skills, 
 
 1. Clone the repository:
 
+<<<<<<< HEAD
 `git clone https://github.com/riz37/portfolio`
 >>>>>>> origin/main
+=======
+`git clone https://github.com/riaz37/portfolio`
+>>>>>>> fe191af (small change)
 
 2. Install dependencies:
 

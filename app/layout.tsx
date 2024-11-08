@@ -59,7 +59,7 @@ export default function RootLayout({
         <meta property="og:url" content="https://riaz37.vercel.app" />
         <meta
           property="og:image"
-          content="https://riaz37.vercel.app/web_screenshot.png"
+          content="https://riaz37.vercel.app/pics/web_screenshot.png"
         />
         <script dangerouslySetInnerHTML={{
           __html: `
