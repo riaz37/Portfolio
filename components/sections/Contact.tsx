@@ -74,7 +74,7 @@ const ContactForm = () => {
 
   return (
     <div className="max-w-lg mx-auto bg-card text-card-foreground rounded-lg p-8 shadow-lg">
-      <h2 className="text-2xl font-bold mb-6 text-primary">Contact Us</h2>
+      <h2 className="text-2xl font-bold mb-6 text-primary">Contact Me</h2>
       <form onSubmit={handleSubmit} className="space-y-4">
         {errors.form && <p className="text-red-600 text-center">{errors.form}</p>}
         <div>
