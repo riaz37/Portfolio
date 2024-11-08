@@ -10,8 +10,8 @@ import Footer from "@/components/sections/Footer";
 import { Analytics } from "@vercel/analytics/react"
 
 export const metadata = {
-  title: "Krishnakumar",
-  description: "Personal portfolio of Krishnakumar",
+  title: "Riazul Islam",
+  description: "Personal portfolio of Riazul Islam",
 };
 
 const navItems = [
@@ -49,22 +49,22 @@ export default function RootLayout({
           rel="icon"
           type="image/png"
           sizes="32x32"
-          href="./favicon-32x32.png"
+          href="./favicon.png"
         />
-        <meta property="og:title" content="Krishnakumar's Portfolio" />
+        <meta property="og:title" content="Riazul's Portfolio" />
         <meta
           property="og:description"
-          content="Data analyst with a passion for web development and machine learning. Transforming complex data into actionable insights and building innovative web solutions."
+          content="Full Stack Web Developer and AI Enthusiast"
         />
-        <meta property="og:url" content="https://krishnakumar.dev" />
+        <meta property="og:url" content="https://riaz37.vercel.app" />
         <meta
           property="og:image"
-          content="https://krishnakumar.dev/pics/web_screenshot.png"
+          content="https://riaz37.vercel.app/web_screenshot.png"
         />
         <script dangerouslySetInnerHTML={{
           __html: `
-            if (window.location.href === "https://krishnavalliappan.github.io/portfolio-website/") {
-              window.location.replace("https://www.krishnakumar.dev");
+            if (window.location.href === "https://github.com/riaz37") {
+              window.location.replace("https://riaz37.vercel.app");
             }
           `
         }} />

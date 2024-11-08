@@ -1,8 +1,11 @@
 // data/workExperience.ts
-import { FaBriefcase, FaPython, FaDatabase, FaChartBar, FaAws, FaReact, FaChalkboardTeacher, } from 'react-icons/fa';
-import { SiPowerbi } from 'react-icons/si';
-import { PiMathOperationsFill } from "react-icons/pi";
+import {  FaReact} from 'react-icons/fa';
+import { RiNextjsFill } from "react-icons/ri";
+import { BiLogoTypescript } from "react-icons/bi";
+import { SiNestjs, SiFramer} from "react-icons/si";
+import { RiTailwindCssFill } from "react-icons/ri";
 import React from 'react';
+import { DiMongodb } from 'react-icons/di';
 
 export interface Skill {
   name: string;
@@ -20,28 +23,12 @@ export interface WorkExperience {
 }
 
 export const workExperiences: WorkExperience[] = [
-{
-    company: "Concordia University",
-    position: "TA - Transform Calculus and PDE",
-    duration: "Sep 2023 - Dec 2023",
-    year: 2023,
-    description: [
-      "Crafted Python simulations to visualize (Fourier Series, Laplace Transforms, PDEs) solutions, enhancing student understanding of the link between theory and real-world applications.",
-      "Facilitated collaborative learning by leading group discussions and encouraging peer support, building a positive and productive learning environment.",
-      "Received excellent student feedback, contributing to a 20% increase in satisfaction ratings compared to previous terms."
-    ],
-    skills: [
-      { name: "Python", icon: FaPython },
-      { name: "Teaching", icon: FaChalkboardTeacher },
-      { name: "Mathematics", icon: PiMathOperationsFill },
-    ],
-    logo: "/logos/concordia-university.png" // Add the path to the Concordia University logo
-  },
+
   {
-    company: "IA Flow Elements",
-    position: "Associate Data Analyst",
-    duration: "April 2020 – July 2022",
-    year: 2020,
+    company: "Acro Nation",
+    position: "Project Lead",
+    duration: "October 2024 – Present",
+    year: 2024,
     description: [
       "Engineered a predictive model using machine learning algorithms to forecast sales trends, enhancing decision-making accuracy and contributing to a 15% uplift in sales projections accuracy.",
       "Boosted data processing efficiency by 40% via custom Python scripts for ETL automation, ensuring precise data handling from extraction to in-depth analysis, integrating with AWS cloud.",
@@ -51,28 +38,30 @@ export const workExperiences: WorkExperience[] = [
       "Enhanced business process efficiency and decision support by collaborating with teams to optimize data workflows and designing tailored Power BI dashboards and KPI reports, resulting in improved strategic planning across the organization."
     ],
     skills: [
-      { name: "Python", icon: FaPython },
-      { name: "SQL", icon: FaDatabase },
-      { name: "Power BI", icon: SiPowerbi },
-      { name: "AWS", icon: FaAws },
-      { name: "Data Visualization", icon: FaChartBar },
+      { name: "TypeScript", icon: BiLogoTypescript },
+      { name: "Next.js", icon: RiNextjsFill },
+      { name: "Nest.js", icon: SiNestjs },
+      { name: "Tailwind", icon: RiTailwindCssFill },
+      { name: "MongoDB", icon: DiMongodb },
+    
     ],
     logo: "/logos/ia-flow.png"
   },
   {
-    company: "IA Flow Elements",
-    position: "CAD Designer",
-    duration: "June 2019 – March 2020",
-    year: 2019,
+    company: "Haze",
+    position: "Frontend Developer",
+    duration: "June 2023 – September 2024",
+    year: 2023,
     description: [
       "Designed flow elements according to provided specifications using RW Miller software, improving product performance in the oil & gas sector.",
       "Managed technical quotations, effectively converting quotes to orders, demonstrating strong business communication skills.",
       "Handled client-centric reporting and documentation, ensuring tailored solutions and high customer satisfaction."
     ],
     skills: [
-      { name: "CAD", icon: FaReact },
-      { name: "Technical Documentation", icon: FaChartBar },
-      { name: "Client Communication", icon: FaBriefcase },
+      { name: "React", icon: FaReact },
+      { name: "Tailwind", icon: RiTailwindCssFill },
+      { name: "Framer Motion", icon: SiFramer },
+
     ],
     logo: "/logos/ia-flow.png"
   }

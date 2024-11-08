@@ -8,7 +8,7 @@ interface CodeLines {
 }
 
 const Terminal = () => {
-  const [activeTab, setActiveTab] = useState<'python' | 'javascript'>('python');
+  const [activeTab, setActiveTab] = useState<'python' | 'javascript'>('javascript');
   const [typedLines, setTypedLines] = useState<{ [key: string]: string[] }>({ python: ['', '', ''], javascript: ['', '', ''] });
   const [currentLine, setCurrentLine] = useState<{ [key: string]: number }>({ python: 0, javascript: 0 });
   const [currentChar, setCurrentChar] = useState<{ [key: string]: number }>({ python: 0, javascript: 0 });
@@ -17,14 +17,14 @@ const Terminal = () => {
 
   const codeLines: CodeLines = useMemo(() => ({
     python: [
-      'print("Hello, World! 👋 I\'m Krishnakumar")',
-      'print("Based in Canada 🍁 🇨🇦")',
-      'print("From Data to Code: Software Developer with 2+ years in Python, JavaScript, and Data Analytics, specializing in Web Development and Automation")'
+      'print("Hello, World! 👋 I\'m Riazul Islam")',
+      'print("Based in Bangladesh 🇧🇩")',
+      'print("Software Developer with 2+ years experience in Python, JavaScript and specializing in Web Development and Automation")'
     ],
     javascript: [
-      'console.log("Hello, World! 👋 I\'m Krishnakumar");',
-      'console.log("Based in Canada 🍁 🇨🇦");',
-      'console.log("From Data to Code: Software Developer with 2+ years in Python, JavaScript, and Data Analytics, specializing in Web Development and Automation");'
+      'console.log("Hello, World! 👋 I\'m Riazul Islam");',
+      'console.log("Based in Bangladesh 🇧🇩");',
+      'console.log("Software Developer with 2+ years experience in Python, JavaScript and specializing in Web Development and Automation");'
     ]
   }), []);
 
@@ -121,7 +121,7 @@ const Terminal = () => {
           transition={{ delay: 1, duration: 0.4 }}
         >
           <RiTerminalBoxFill className="text-primary mr-2" />
-          <span className="text-primary">krishna@portfolio:~$</span>
+          <span className="text-primary">riaz@portfolio:~$</span>
           <span className="text-secondary ml-2">&gt;&gt;</span>
           <span className='text-muted-foreground'>{activeTab}</span>
         </motion.div>

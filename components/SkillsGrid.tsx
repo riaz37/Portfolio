@@ -2,17 +2,27 @@
 import React, { useMemo } from 'react';
 import { motion } from 'framer-motion';
 import { FaPython, FaDatabase, FaChartBar, FaCode, FaReact, FaJs, FaNodeJs, FaGithub } from 'react-icons/fa';
-
+import { DiMongodb } from "react-icons/di";
+import { RiNextjsFill } from "react-icons/ri";
+import { BiLogoPostgresql,BiLogoTypescript } from "react-icons/bi";
+import { SiNestjs, SiFramer, SiMysql} from "react-icons/si";
+import { RiTailwindCssFill } from "react-icons/ri";
+import { TbBrandMysql } from "react-icons/tb";
 const SkillsGrid = () => {
   const skills = useMemo(() => [
-    { icon: <FaPython />, name: 'Python' },
-    { icon: <FaDatabase />, name: 'SQL' },
-    { icon: <FaChartBar />, name: 'Power BI' },
-    { icon: <FaCode />, name: 'Data Viz' },
     { icon: <FaJs />, name: 'JavaScript' },
+    { icon: <FaPython />, name: 'Python' },
     { icon: <FaReact />, name: 'React' },
+    { icon: <RiTailwindCssFill />, name: 'Tailwind CSS' },
+    { icon: <SiFramer />, name: 'Framer Motion' },
+    { icon: <RiNextjsFill/>, name: 'Next.js' },
+    { icon: <SiNestjs />, name: 'Nest.js' },
     { icon: <FaNodeJs />, name: 'Node.js' },
+    { icon: <TbBrandMysql />, name: 'MySQL' },
+    { icon: <BiLogoPostgresql />, name: 'PostgreSQL' },
+    { icon: <DiMongodb />, name: 'MongoDB' },
     { icon: <FaGithub />, name: 'Git' },
+    
   ], []);
 
   const skillVariants = {

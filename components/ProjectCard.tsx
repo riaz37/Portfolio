@@ -6,9 +6,10 @@ import Link from 'next/link';
 
 interface ProjectCardProps extends Project {
   isHovered: boolean;
+  liveUrl?: string;
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, icon: Icon, technologies, skills, isHovered, githubLink }) => {
+const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, icon: Icon, technologies, skills, isHovered, liveUrl }) => {
   const [isClicked, setIsClicked] = useState(false);
 
   useEffect(() => {
@@ -31,7 +32,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, icon: Ico
   };
 
   return (
-    <Link href={githubLink} target="_blank" rel="noopener noreferrer">
+    <Link href={liveUrl || "" } target="_blank" rel="noopener noreferrer">
       <motion.div
         className="relative p-6 rounded-xl bg-card text-card-foreground transition-all duration-300 cursor-pointer h-[400px] flex flex-col"
         initial={{ opacity: 0, y: 20 }}
