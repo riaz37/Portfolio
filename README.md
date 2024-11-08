@@ -29,7 +29,11 @@ This project is a responsive, single-page application that showcases my skills, 
 
 1. Clone the repository:
 
+<<<<<<< HEAD
 `git clone https://github.com/riaz37/portfolio`
+=======
+`git clone https://github.com/riz37/portfolio`
+>>>>>>> origin/main
 
 2. Install dependencies:
 
