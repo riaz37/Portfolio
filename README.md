@@ -29,9 +29,6 @@ This project is a responsive, single-page application that showcases my skills, 
 
 1. Clone the repository:
 
-<<<<<<< HEAD
-`git clone https://github.com/riaz37/portfolio`
-=======
 `git clone https://github.com/riz37/portfolio`
 >>>>>>> origin/main
 
@@ -44,18 +41,4 @@ This project is a responsive, single-page application that showcases my skills, 
 
 4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Customization
 
-To customize the content of the portfolio:
-
-- Edit the project data in `data/projects.ts`
-- Update work experience in `data/workExperience.ts`
-- Modify component content in the respective files under `components/`
-
-## Deployment
-
-This project can be easily deployed on Vercel or any other platform that supports Next.js applications.
-
-## License
-
-This project is open source and available under the [MIT License](LICENSE).
