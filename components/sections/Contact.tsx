@@ -53,14 +53,13 @@ const ContactForm = () => {
     formDataToSend.append('message', formData.message);
 
     const response = await fetch('https://api.web3forms.com/submit', {
-      method: 'POST',
+      method: "POST",
       headers: {
-        'Content-Type': 'application/json',
+        "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        email: formData.email,
-        formdata: formDataToSend,
-        access_key: process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY, // Add your Web3Forms access key here
+        access_key: process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY, // Your Web3Forms Access Key
+        ...formData,
       }),
     });
 
